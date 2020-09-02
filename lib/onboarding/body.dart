@@ -14,14 +14,14 @@ class _BodyState extends State<Body> {
   List<Map<String, String>> onBoardingData = [
     {
       "text": "Welcome to Nikolai Apps",
-      "image": "assets/images/image_one"},
+      "image": "assets/images/image1.svg"},
     {
       "text": "Nikolai adalah seorang pria berkebangsaan indonesia",
-      "image": "assets/images/image_two"
+      "image": "assets/images/image2.svg"
     },
     {
       "text": "Lahir di Tangerang, 5 Mei 1997",
-      "image": "assets/images/image_three"
+      "image": "assets/images/image3.svg"
     },
   ];
 
@@ -66,9 +66,10 @@ class _BodyState extends State<Body> {
                     DefaultButton(
                       text: "Continue",
                       press: () {
-                        //
+                        // move to next page
                       },
-                    )
+                    ),
+                    Spacer(),
                   ],
                 ),
               ),

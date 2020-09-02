@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_svg/flutter_svg.dart';
 import 'package:on_boarding/constants.dart';
 import 'package:on_boarding/size_config.dart';
 
@@ -29,7 +30,7 @@ class OnBoardingContent extends StatelessWidget {
         Spacer(
           flex: 2,
         ),
-        Image.asset(
+        SvgPicture.asset(
           image,
           height: getProportionateScreenHeight(265),
           width: getProportionateScreenWidth(235),
