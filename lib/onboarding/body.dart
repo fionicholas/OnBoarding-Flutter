@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:on_boarding/components/default_button.dart';
 import 'package:on_boarding/constants.dart';
 import 'package:on_boarding/onboarding/onboarding_content.dart';
+import 'package:on_boarding/signin/signin_screen.dart';
 import 'package:on_boarding/size_config.dart';
 
 class Body extends StatefulWidget {
@@ -66,7 +67,7 @@ class _BodyState extends State<Body> {
                     DefaultButton(
                       text: "Continue",
                       press: () {
-                        // move to next page
+                        Navigator.pushNamed(context, SignInScreen.routeName);
                       },
                     ),
                     Spacer(),

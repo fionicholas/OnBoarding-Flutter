@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:on_boarding/onboarding/onboarding_screen.dart';
 import 'package:on_boarding/routes.dart';
+import 'package:on_boarding/theme.dart';
 
 void main() {
   runApp(MyApp());
@@ -13,9 +14,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'Flutter Demo',
-      theme: ThemeData(
-        primarySwatch: Colors.blue,
-      ),
+      theme: theme(),
       initialRoute: OnBoardingScreen.routeName,
       routes: routes,
     );
