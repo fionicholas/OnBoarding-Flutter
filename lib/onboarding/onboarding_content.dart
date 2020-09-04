@@ -32,7 +32,7 @@ class OnBoardingContent extends StatelessWidget {
         ),
         SvgPicture.asset(
           image,
-          height: getProportionateScreenHeight(265),
+          height: getProportionateScreenHeight(365),
           width: getProportionateScreenWidth(235),
         )
       ],
