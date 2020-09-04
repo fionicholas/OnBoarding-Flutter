@@ -5,6 +5,7 @@ import 'package:on_boarding/constants.dart';
 
 ThemeData theme() {
   return ThemeData(
+    primarySwatch: Colors.blue,
     scaffoldBackgroundColor: Colors.white,
     fontFamily: "Muli",
     appBarTheme: appBarTheme(),
