@@ -5,7 +5,7 @@ import 'package:on_boarding/components/custom_suffix_icon.dart';
 import 'package:on_boarding/components/default_button.dart';
 import 'package:on_boarding/components/form_error.dart';
 import 'package:on_boarding/constants.dart';
-import 'package:on_boarding/onboarding/onboarding_screen.dart';
+import 'package:on_boarding/otp/otp_screen.dart';
 import 'package:on_boarding/size_config.dart';
 
 class SignInForm extends StatefulWidget {
@@ -64,7 +64,7 @@ class _SignFormState extends State<SignInForm> {
             press: (){
               if(_formKey.currentState.validate()){
                 _formKey.currentState.save();
-                Navigator.pushNamed(context, OnBoardingScreen.routeName);
+                Navigator.pushNamed(context, OTPScreen.routeName);
               }
             },
           )
